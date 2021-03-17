@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: Create and Write to the file
+    copy:
+      dest: "/tmp/test1/helloWorld.txt"
+      mode: u=rwx,g=rx,o=rx
+      content: |
+        hello World!!
+        Hello World line 2!!
+        "the qouts sign fot testing"      

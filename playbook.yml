@@ -1,0 +1,6 @@
+---
+- hosts: all
+  roles:
+    - common
+    - helloWorld
+    - install docker.ce

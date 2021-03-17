@@ -1,0 +1,10 @@
+---
+- hosts: all
+  name: install package docker-ce
+  become: yes
+  tasks: 
+  - name: install docker-ce
+    apt:
+      name:
+      - docker-ce
+      state: latest
