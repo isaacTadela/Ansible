@@ -1,12 +1,8 @@
----
-- hosts: all
-  name: install packages zip and vim
-  become: yes
-  tasks: 
-  - name: Install packages
-    apt:
-      state: latest
-      name:
+--- 
+- 
+  apt: 
+    name: 
       - vim
       - zip
-      
+    state: latest
+  name: "Install packages"
